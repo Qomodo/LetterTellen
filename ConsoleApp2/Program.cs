@@ -10,9 +10,6 @@ namespace LetterTellen
 {
     public class Program
     {
-        string randomString;
-        string secondRandomString = "Git";
-        string NEWSTUFF = "NEWNEWNEW";
 
         private static string sourceString = File.ReadAllText(@"C:\Users\Dion\Desktop\Programmeren\Text dat je wilt Scannen.txt");         //input
         public static void Main(string[] args)
