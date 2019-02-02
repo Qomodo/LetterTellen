@@ -11,7 +11,10 @@ namespace LetterTellen
     public class Program
     {
 
-        private static string sourceString = File.ReadAllText(@"C:\Users\Dion\Desktop\Programmeren\Text dat je wilt Scannen.txt");         //input
+        //private static string sourceString = File.ReadAllText(@"C:\Users\Dion\Desktop\Programmeren\Text dat je wilt Scannen.txt");         //input
+
+        //mockup string
+        private static string sourceString = "Aaa bbb ccc bbb aaa aaa aaa.";
         public static void Main(string[] args)
         {
             //Interface(); //activeren
@@ -23,12 +26,8 @@ namespace LetterTellen
                     //verwijderen count = 0?
                     //Volledige lijst
                     //leestekens???
-
                 //uitprinten resultaten?
-
-        
-
-       
+                       
             LettersTellen();   
             WoordenTellen();
             ZinnenTellen();            
@@ -69,7 +68,7 @@ namespace LetterTellen
         public static void WoordenTellen()
         {           
             string[] woorden = sourceString.Split(' ');   //scheidt woorden door (' ')            
-            List<string>lijstGescandeWoorden = new List<string>();
+            List<string>lijstGescandeWoorden = new List<string>();    //wordt bijgevuld en mee vergeleken
             List<string> geenDoublesLijstGescandeWoorden = new List<string>();
 
 
@@ -93,7 +92,10 @@ namespace LetterTellen
                     foreach (string item in woorden)
                     {
                         string cleanItem = item.ToLower().Replace(".", "").Replace("\n", "").Replace("\r", "").Replace(",", "").Replace("?", "").Replace("!", "").ToString();
-
+                        foreach (string woordWoordenKopie in woordenKopie)
+                        {
+                            woordWoordenKopie.ToLower().Replace(".", "").Replace("\n", "").Replace("\r", "").Replace(",", "").Replace("?", "").Replace("!", "").ToString();
+                        }
                         if (woordenKopie.First() == cleanItem)              //als woord == gescande woord count+1, 
                         {
                             count++;
@@ -106,7 +108,7 @@ namespace LetterTellen
                     }
                 }
                 Console.WriteLine("Woord: {0} {1} keer gebruikt!",woord,count);
-                count = 0;
+                count = 0;                 //reset count naar nul
             }            
         }
         public static void ZinnenTellen()
