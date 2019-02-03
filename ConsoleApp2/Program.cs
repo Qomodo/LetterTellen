@@ -11,7 +11,10 @@ namespace LetterTellen
     public class Program
     {
 
-        private static string sourceString = File.ReadAllText(@"C:\Users\Dion\Desktop\Programmeren\Text dat je wilt Scannen.txt");         //input
+        //private static string sourceString = File.ReadAllText(@"C:\Users\Dion\Desktop\Programmeren\Text dat je wilt Scannen.txt");         //input
+
+        //mockup string
+        private static string sourceString = "Aaa bbb ccc bbb aaa aaa aaa.";
         public static void Main(string[] args)
         {
             //Interface(); //activeren
@@ -23,12 +26,8 @@ namespace LetterTellen
                     //verwijderen count = 0?
                     //Volledige lijst
                     //leestekens???
-
                 //uitprinten resultaten?
-
-        
-
-       
+                       
             LettersTellen();   
             WoordenTellen();
             ZinnenTellen();            
@@ -68,20 +67,38 @@ namespace LetterTellen
         }
         public static void WoordenTellen()
         {           
-            string[] woorden = sourceString.Split(' ');   //scheidt woorden door (' ')            
-            List<string>lijstGescandeWoorden = new List<string>();
-            List<string> geenDoublesLijstGescandeWoorden = new List<string>();
+            string[] woordenSource = sourceString.Split(' ');   //scheidt woorden door (' ')            
+            List<string>cleanWoorden = new List<string>();    //wordt bijgevuld en mee vergeleken
+            List<string> noDoubleCleanWoorden = new List<string>();
 
 
-            foreach (string woord in woorden)
+
+            foreach (string woord in woordenSource)
             {
                 //woorden kleine letters geven & verwijder interpunctie
                 //verwijder: ?!.,\r\n
-                string cleanwoord = woord.ToLower().Replace(".", "").Replace("\n", "").Replace("\r", "").Replace(",", "").Replace("?","").Replace("!","").ToString(); 
+                string cleanwoord = woord.ToLower().Replace(".", "").Replace("\n", "").Replace("\r", "").Replace(",", "").Replace("?","").Replace("!","").ToString();
 
-                lijstGescandeWoorden.Add(cleanwoord);                                 //stopt alle bewerkte woorden in een lijst
-                geenDoublesLijstGescandeWoorden = lijstGescandeWoorden.Distinct().ToList(); //verwijdert dubbele woorden & maakt nieuwe lijst                  
+                cleanWoorden.Add(cleanwoord);                                 //stopt alle bewerkte woorden in een lijst
+                noDoubleCleanWoorden = cleanWoorden.Distinct().ToList(); //verwijdert dubbele woorden & maakt nieuwe lijst                  
             }
+
+           
+            Dictionary<string, int> countWoordDictionary = new Dictionary<string, int>();
+
+            foreach (string woord in cleanWoorden)                // Vul Dictionary met woorden en counts
+            {
+                int returnedCount;
+                if (countWoordDictionary.TryGetValue(woord, out returnedCount)) countWoordDictionary[woord] += 1; // Could also be countWordDictionary[word], but errors are not caught
+                else countWoordDictionary.Add(woord, 1);
+            }
+
+            foreach (KeyValuePair<string, int> wordCountKeyVal in countWoordDictionary)     // Print the dictionary keys and values  after filling
+            {
+                Console.WriteLine("Woord: {0} {1} keer gebruikt!", wordCountKeyVal.Key, wordCountKeyVal.Value);
+
+            }
+<<<<<<< HEAD
             
             int count = 0;
             foreach (var woord in geenDoublesLijstGescandeWoorden)              //voor elke woord in gescande woorden
@@ -109,6 +126,8 @@ namespace LetterTellen
                 Console.WriteLine("Woord: {0} {1} keer gebruikt!",woord,count);
                 count = 0;
             }            
+=======
+>>>>>>> 0f8217687a4b4f771d0672cdbaa92d802e82dae4
         }
         public static void ZinnenTellen()
         {
