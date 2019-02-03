@@ -65,16 +65,14 @@ namespace LetterTellen
                 }
             }               
         }
+
         public static void WoordenTellen()
         {           
             string[] woordenSource = sourceString.Split(' ');   //scheidt woorden door (' ')            
             List<string>cleanWoorden = new List<string>();    //wordt bijgevuld en mee vergeleken
             List<string> noDoubleCleanWoorden = new List<string>();
 
-
-
-            foreach (string woord in woordenSource)
-            {
+            foreach (string woord in woordenSource) {
                 //woorden kleine letters geven & verwijder interpunctie
                 //verwijder: ?!.,\r\n
                 string cleanwoord = woord.ToLower().Replace(".", "").Replace("\n", "").Replace("\r", "").Replace(",", "").Replace("?","").Replace("!","").ToString();
@@ -98,37 +96,8 @@ namespace LetterTellen
                 Console.WriteLine("Woord: {0} {1} keer gebruikt!", wordCountKeyVal.Key, wordCountKeyVal.Value);
 
             }
-<<<<<<< HEAD
-            
-            int count = 0;
-            foreach (var woord in geenDoublesLijstGescandeWoorden)              //voor elke woord in gescande woorden
-            {          
-                List<string> woordenKopie = new List<string>(woorden);   // kopielijst, die bewerkt mag worden
-                
-
-                for (int i = 0; i < woorden.Length; i++)             //loopt tot lengte kopielijst
-                {
-                    foreach (string item in woorden)
-                    {
-                        string cleanItem = item.ToLower().Replace(".", "").Replace("\n", "").Replace("\r", "").Replace(",", "").Replace("?", "").Replace("!", "").ToString();
-
-                        if (woordenKopie.First() == cleanItem)              //als woord == gescande woord count+1, 
-                        {
-                            count++;
-                        }
-                        else
-                        {
-                            break;
-                        }                                        
-                    woordenKopie.RemoveAt(0);                       //verwijder woord uit Kopie                                           
-                    }
-                }
-                Console.WriteLine("Woord: {0} {1} keer gebruikt!",woord,count);
-                count = 0;
-            }            
-=======
->>>>>>> 0f8217687a4b4f771d0672cdbaa92d802e82dae4
         }
+
         public static void ZinnenTellen()
         {
             int AlleHoofdLetters = 0;
@@ -176,7 +145,6 @@ namespace LetterTellen
 
             int volledigeZin = zinEind;
             Console.WriteLine("Je hebt {0} {1} gebruikt", volledigeZin,zinOfZinnen);
-
         }
     }
 }

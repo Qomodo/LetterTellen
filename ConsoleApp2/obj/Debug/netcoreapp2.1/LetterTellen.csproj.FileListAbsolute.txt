@@ -9,17 +9,6 @@ C:/Users/Dion/Desktop/Programmeren/ConsoleApp2/ConsoleApp2/obj/Debug/netcoreapp2
 C:/Users/Dion/Desktop/Programmeren/ConsoleApp2/ConsoleApp2/obj/Debug/netcoreapp2.1/LetterTellen.AssemblyInfo.cs
 C:/Users/Dion/Desktop/Programmeren/ConsoleApp2/ConsoleApp2/obj/Debug/netcoreapp2.1/LetterTellen.dll
 C:/Users/Dion/Desktop/Programmeren/ConsoleApp2/ConsoleApp2/obj/Debug/netcoreapp2.1/LetterTellen.pdb
-C:/Users/Dion/Desktop/Programmeren/LetterTellen 1/ConsoleApp2/obj/Debug/netcoreapp2.1/LetterTellen.csprojAssemblyReference.cache
-C:/Users/Dion/Desktop/Programmeren/LetterTellen 1/ConsoleApp2/obj/Debug/netcoreapp2.1/LetterTellen.csproj.CoreCompileInputs.cache
-C:/Users/Dion/Desktop/Programmeren/LetterTellen 1/ConsoleApp2/obj/Debug/netcoreapp2.1/LetterTellen.AssemblyInfoInputs.cache
-C:/Users/Dion/Desktop/Programmeren/LetterTellen 1/ConsoleApp2/obj/Debug/netcoreapp2.1/LetterTellen.AssemblyInfo.cs
-C:/Users/Dion/Desktop/Programmeren/LetterTellen 1/ConsoleApp2/obj/Debug/netcoreapp2.1/LetterTellen.dll
-C:/Users/Dion/Desktop/Programmeren/LetterTellen 1/ConsoleApp2/obj/Debug/netcoreapp2.1/LetterTellen.pdb
-C:/Users/Dion/Desktop/Programmeren/LetterTellen 1/ConsoleApp2/bin/Debug/netcoreapp2.1/LetterTellen.deps.json
-C:/Users/Dion/Desktop/Programmeren/LetterTellen 1/ConsoleApp2/bin/Debug/netcoreapp2.1/LetterTellen.runtimeconfig.json
-C:/Users/Dion/Desktop/Programmeren/LetterTellen 1/ConsoleApp2/bin/Debug/netcoreapp2.1/LetterTellen.runtimeconfig.dev.json
-C:/Users/Dion/Desktop/Programmeren/LetterTellen 1/ConsoleApp2/bin/Debug/netcoreapp2.1/LetterTellen.dll
-C:/Users/Dion/Desktop/Programmeren/LetterTellen 1/ConsoleApp2/bin/Debug/netcoreapp2.1/LetterTellen.pdb
 /Users/Qomodo/Desktop/Programmas 2019/Lettertellen Git/ConsoleApp2/bin/Debug/netcoreapp2.1/LetterTellen.deps.json
 /Users/Qomodo/Desktop/Programmas 2019/Lettertellen Git/ConsoleApp2/bin/Debug/netcoreapp2.1/LetterTellen.runtimeconfig.json
 /Users/Qomodo/Desktop/Programmas 2019/Lettertellen Git/ConsoleApp2/bin/Debug/netcoreapp2.1/LetterTellen.runtimeconfig.dev.json
@@ -31,3 +20,13 @@ C:/Users/Dion/Desktop/Programmeren/LetterTellen 1/ConsoleApp2/bin/Debug/netcorea
 /Users/Qomodo/Desktop/Programmas 2019/Lettertellen Git/ConsoleApp2/obj/Debug/netcoreapp2.1/LetterTellen.AssemblyInfo.cs
 /Users/Qomodo/Desktop/Programmas 2019/Lettertellen Git/ConsoleApp2/obj/Debug/netcoreapp2.1/LetterTellen.dll
 /Users/Qomodo/Desktop/Programmas 2019/Lettertellen Git/ConsoleApp2/obj/Debug/netcoreapp2.1/LetterTellen.pdb
+C:\Users\Dion\Desktop\Programmeren\LetterTellen 1\ConsoleApp2\bin\Debug\netcoreapp2.1\LetterTellen.deps.json
+C:\Users\Dion\Desktop\Programmeren\LetterTellen 1\ConsoleApp2\bin\Debug\netcoreapp2.1\LetterTellen.runtimeconfig.json
+C:\Users\Dion\Desktop\Programmeren\LetterTellen 1\ConsoleApp2\bin\Debug\netcoreapp2.1\LetterTellen.runtimeconfig.dev.json
+C:\Users\Dion\Desktop\Programmeren\LetterTellen 1\ConsoleApp2\bin\Debug\netcoreapp2.1\LetterTellen.dll
+C:\Users\Dion\Desktop\Programmeren\LetterTellen 1\ConsoleApp2\bin\Debug\netcoreapp2.1\LetterTellen.pdb
+C:\Users\Dion\Desktop\Programmeren\LetterTellen 1\ConsoleApp2\obj\Debug\netcoreapp2.1\LetterTellen.csproj.CoreCompileInputs.cache
+C:\Users\Dion\Desktop\Programmeren\LetterTellen 1\ConsoleApp2\obj\Debug\netcoreapp2.1\LetterTellen.AssemblyInfoInputs.cache
+C:\Users\Dion\Desktop\Programmeren\LetterTellen 1\ConsoleApp2\obj\Debug\netcoreapp2.1\LetterTellen.AssemblyInfo.cs
+C:\Users\Dion\Desktop\Programmeren\LetterTellen 1\ConsoleApp2\obj\Debug\netcoreapp2.1\LetterTellen.dll
+C:\Users\Dion\Desktop\Programmeren\LetterTellen 1\ConsoleApp2\obj\Debug\netcoreapp2.1\LetterTellen.pdb
