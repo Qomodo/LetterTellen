@@ -88,6 +88,7 @@ namespace LetterTellen
             {          
                 List<string> woordenKopie = new List<string>(woorden);   // kopielijst, die bewerkt mag worden
                 
+
                 for (int i = 0; i < woorden.Length; i++)             //loopt tot lengte kopielijst
                 {
                     foreach (string item in woorden)
@@ -159,5 +160,4 @@ namespace LetterTellen
 
         }
     }
-
 }
